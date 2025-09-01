@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_services_sections",
+  "info": {
+    "displayName": "sections"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "list": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}
