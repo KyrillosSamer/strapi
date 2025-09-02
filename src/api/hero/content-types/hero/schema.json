@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "teams",
+  "collectionName": "heroes",
   "info": {
-    "singularName": "team",
-    "pluralName": "teams",
-    "displayName": "team"
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "hero"
   },
   "options": {
     "draftAndPublish": true
@@ -15,21 +15,36 @@
     }
   },
   "attributes": {
-    "name": {
-      "type": "string",
+    "title": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "position": {
-      "type": "string",
+    "description": {
+      "type": "blocks",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "backgroundImage": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "image": {
       "type": "media",
@@ -38,35 +53,13 @@
           "localized": true
         }
       },
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
-        "files"
+        "files",
+        "videos",
+        "audios"
       ]
-    },
-    "whatsapp": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "phone": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "email": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
     }
   }
 }
